@@ -28,7 +28,13 @@ canvas{display: block;}
 <canvas id="xrCanvas"></canvas>
 
 <script type="module">
-import * as THREE from 'https://unpkg.com/three@0.113.2/build/three.module.js';
+// ファイルから直接three.module.jsを取り込む
+import * as THREE from 'three.module.js';
+
+// CDNでthree.module.jsを取り込む
+// import * as THREE from 'https://unpkg.com/three@0.113.2/build/three.module.js';
+
+
 
 const width  = window.innerWidth;
 const height = window.innerHeight;
